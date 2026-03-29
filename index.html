@@ -1,107 +1,149 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>James Peña | Técnico en Telecomunicaciones</title>
+<meta charset="UTF-8">
+<title>CV - James Peña</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: white;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: #333;
+}
 
-        header {
-            background: #1e293b;
-            padding: 20px;
-            text-align: center;
-        }
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
 
-        h1 {
-            margin: 0;
-            font-size: 32px;
-        }
+/* HEADER */
+header {
+    text-align: center;
+    color: white;
+    padding: 40px 0;
+}
 
-        p {
-            color: #cbd5e1;
-        }
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
 
-        .container {
-            padding: 40px;
-            text-align: center;
-        }
+/* TARJETAS */
+.card {
+    background: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
 
-        .card {
-            background: #1e293b;
-            padding: 20px;
-            margin: 20px auto;
-            border-radius: 15px;
-            max-width: 400px;
-            box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
-        }
+.card:hover {
+    transform: scale(1.03);
+}
 
-        button {
-            padding: 12px 20px;
-            border: none;
-            background: #3b82f6;
-            color: white;
-            border-radius: 10px;
-            cursor: pointer;
-            font-size: 16px;
-        }
+h2 {
+    color: #2a5298;
+}
 
-        button:hover {
-            background: #2563eb;
-        }
+/* LISTAS */
+ul {
+    padding-left: 20px;
+}
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #020617;
-            margin-top: 40px;
-        }
-    </style>
+/* BOTÓN */
+button {
+    background: #2a5298;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1e3c72;
+}
+
+/* FOTO */
+.foto {
+    width: 120px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>James Peña</h1>
+    <h1>James Andoni Peña Yarleque</h1>
     <p>Técnico en Telecomunicaciones</p>
+    <img src="https://via.placeholder.com/120" class="foto">
 </header>
 
 <div class="container">
 
     <div class="card">
-        <h2>Sobre mí</h2>
-        <p>Especialista en instalación de redes alámbricas e inalámbricas. Experiencia en soporte técnico y telecomunicaciones.</p>
+        <h2>📌 Sobre mí</h2>
+        <p>
+            Técnico instalador de redes alámbricas e inalámbricas con experiencia en fibra óptica,
+            configuración de equipos y soluciones en telecomunicaciones.
+        </p>
     </div>
 
     <div class="card">
-        <h2>Servicios</h2>
-        <p>✔ Instalación de internet<br>
-           ✔ Configuración de routers<br>
-           ✔ Cableado estructurado</p>
+        <h2>💼 Experiencia</h2>
+        <ul>
+            <li><b>Ludyaltel</b> (2018 - 2024)</li>
+            <li><b>Movistar</b> (2022)</li>
+            <li><b>WOW</b> (2024)</li>
+        </ul>
     </div>
 
     <div class="card">
-        <h2>Contacto</h2>
-        <p>📱 979076353<br>
-           💬 WhatsApp disponible</p>
-        <button onclick="contactar()">Contáctame</button>
+        <h2>🛠️ Habilidades</h2>
+        <ul>
+            <li>Instalación de redes</li>
+            <li>Fibra óptica</li>
+            <li>Configuración de routers</li>
+            <li>Soporte técnico</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>📞 Contacto</h2>
+        <p>📱 979076353</p>
+        <p>👤 yeins_9</p>
+
+        <button onclick="contacto()">Contáctame</button>
+        <br><br>
+
+        <a href="https://wa.me/51979076353" target="_blank">
+            <button>WhatsApp</button>
+        </a>
     </div>
 
 </div>
 
 <footer>
-    <p>© 2026 James Peña</p>
+    <p>© 2026 - CV Profesional</p>
 </footer>
 
 <script>
-    function contactar() {
-        alert("Gracias por tu interés, pronto me contactarás 👍");
-    }
+function contacto() {
+    alert("Gracias por tu interés. Te responderé pronto.");
+}
 </script>
 
 </body>
