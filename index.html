@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>James Peña | Técnico en Telecomunicaciones</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        header {
+            background: #1e293b;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        p {
+            color: #cbd5e1;
+        }
+
+        .container {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 15px;
+            max-width: 400px;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+        }
+
+        button {
+            padding: 12px 20px;
+            border: none;
+            background: #3b82f6;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #2563eb;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #020617;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>James Peña</h1>
+    <p>Técnico en Telecomunicaciones</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Sobre mí</h2>
+        <p>Especialista en instalación de redes alámbricas e inalámbricas. Experiencia en soporte técnico y telecomunicaciones.</p>
+    </div>
+
+    <div class="card">
+        <h2>Servicios</h2>
+        <p>✔ Instalación de internet<br>
+           ✔ Configuración de routers<br>
+           ✔ Cableado estructurado</p>
+    </div>
+
+    <div class="card">
+        <h2>Contacto</h2>
+        <p>📱 979076353<br>
+           💬 WhatsApp disponible</p>
+        <button onclick="contactar()">Contáctame</button>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 James Peña</p>
+</footer>
+
+<script>
+    function contactar() {
+        alert("Gracias por tu interés, pronto me contactarás 👍");
+    }
+</script>
+
+</body>
+</html>
